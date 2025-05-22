@@ -52,12 +52,18 @@ class Lista {
         }
     }
 
+//PARTE D: Eliminar el primer nodo
 /**
  * @brief eliminar el primer nodo de la lista
  * @param
  * @return
  */
     void eliminarPrimerNodo(){
+        if (cabeza != nullptr) {
+            Nodo* nodoAEliminar = cabeza;
+            cabeza = cabeza->siguiente;
+            delete nodoAEliminar;
+        }
     }
 
 /** 
@@ -66,9 +72,12 @@ class Lista {
  * @return
  */
     void mostrarNodos(){
+    
     }
 
+
 int main() {
+  
 
     return 0;
 }
