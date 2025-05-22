@@ -34,12 +34,22 @@ class Lista {
         cabeza = nullptr;
     }
 
+//PARTE C: Agegar nodos al final
 /**
  * @brief Agregar un nodo al final de la lista
- * @param valor 
- * @return 
+ * @param valor para guardar el valor del nodo 
  */
     void agregarAlFinal(int valor){
+    Nodo* nuevoNodo = new Nodo(valor);
+    if (cabeza == nullptr) {
+        cabeza = nuevoNodo;
+    } else {
+        Nodo* actual = cabeza;
+        while (actual->siguiente != nullptr) {
+            actual = actual->siguiente;
+        }
+        actual->siguiente = nuevoNodo;
+        }
     }
 
 /**
