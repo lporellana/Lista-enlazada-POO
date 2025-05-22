@@ -17,6 +17,18 @@ class Nodo {
     }
 };
 
+/// @brief Clase Lista enlazada
+
+class Lista {
+    private:
+    Nodo* cabeza;
+
+    public:
+    Lista() {
+        cabeza = nullptr;
+    }
+
+
 int main() {
 
     return 0;
