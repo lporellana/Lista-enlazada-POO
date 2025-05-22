@@ -2,12 +2,15 @@
 
 using namespace std;
 
-/// @brief Clase Nodo
-
+// PARTE A
+/**
+ * @brief Clase Nodo
+ * @param dato para guardar el valor del nodo
+ * @param siguiente para guardar la dirección del siguiente nodo
+ * @details Esta clase representa un nodo de una lista enlazada simple.
+ */
 class Nodo {
-
     public:
-
     int dato;
     Nodo* siguiente;
 
@@ -17,8 +20,11 @@ class Nodo {
     }
 };
 
-/// @brief Clase Lista enlazada
-
+//PARTE B
+/**
+ * @brief Clase Lista
+ * @details Esta clase representa una lista enlazada simple.
+ */
 class Lista {
     private:
     Nodo* cabeza;
