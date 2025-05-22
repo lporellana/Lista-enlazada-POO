@@ -9,6 +9,7 @@ using namespace std;
  * @param siguiente para guardar la dirección del siguiente nodo
  * @details Esta clase representa un nodo de una lista enlazada simple.
  */
+
 class Nodo {
     public:
     int dato;
@@ -78,9 +79,51 @@ class Lista {
         }
         cout << endl;
     }
+};
 
 int main() {
-  
+        // 1. Crea una lista.
+    Lista miLista;
+    cout << "--- Inicio del Programa ---" << endl;
+    miLista.mostrarNodos(); // Mostrar lista vacía al inicio
 
-    return 0;
-}
+    // 2. Agrega 3 nodos con los valores que tú elijas.
+    cout << "\nAgregando nodos: 5, 15, 25" << endl;
+    miLista.agregarAlFinal(5);
+    miLista.agregarAlFinal(15);
+    miLista.agregarAlFinal(25);
+
+    // 3. Muestra la lista.
+    
+    cout << "Después de agregar 3 nodos:" << endl;
+    miLista.mostrarNodos();
+
+    // 4. Elimina el primer nodo.
+    
+    cout << "\nEliminando el primer nodo..." << endl;
+    miLista.eliminarPrimerNodo(); // Debería eliminar el '5'
+
+    // 5. Muestra la lista nuevamente.
+    
+    cout << "Después de eliminar el primer nodo:" << 
+    endl;
+    miLista.mostrarNodos();
+    
+    cout << "\nAgregando un nuevo nodo (35) al final..." << endl;
+    miLista.agregarAlFinal(35);
+    miLista.mostrarNodos();
+
+    cout << "\nEliminando otro nodo..." << endl;
+    miLista.eliminarPrimerNodo(); // Debería eliminar el '15'
+    miLista.mostrarNodos();
+    
+    cout << "\nEliminando el último nodo restante..." << endl;
+    miLista.eliminarPrimerNodo(); // Debería eliminar el '25'
+    miLista.mostrarNodos();
+    
+    cout << "\nIntentando eliminar de una lista vacía..." << endl;
+    miLista.eliminarPrimerNodo(); // Esto debería mostrar el mensaje de error
+
+    cout << "--- Fin del Programa ---" << std::endl;
+    return 0; // Indica que el programa finalizó correctamente
+    }
