@@ -34,6 +34,29 @@ class Lista {
         cabeza = nullptr;
     }
 
+/**
+ * @brief Agregar un nodo al final de la lista
+ * @param valor 
+ * @return 
+ */
+    void agregarAlFinal(int valor){
+    }
+
+/**
+ * @brief eliminar el primer nodo de la lista
+ * @param
+ * @return
+ */
+    void eliminarPrimerNodo(){
+    }
+
+/** 
+ * @brief mostrar los nodos de la lista
+ * @param
+ * @return
+ */
+    void mostrarNodos(){
+    }
 
 int main() {
 
