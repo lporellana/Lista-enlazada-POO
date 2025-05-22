@@ -56,7 +56,6 @@ class Lista {
 /**
  * @brief eliminar el primer nodo de la lista
  * @param
- * @return
  */
     void eliminarPrimerNodo(){
         if (cabeza != nullptr) {
@@ -66,15 +65,19 @@ class Lista {
         }
     }
 
+//PARTE E: Mostrar Nodos    
 /** 
  * @brief mostrar los nodos de la lista
  * @param
- * @return
  */
     void mostrarNodos(){
-    
+        Nodo* actual = cabeza;
+        while (actual != nullptr) {
+            cout << actual->dato << " ";
+            actual = actual->siguiente;
+        }
+        cout << endl;
     }
-
 
 int main() {
   
